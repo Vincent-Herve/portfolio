@@ -5,7 +5,7 @@ import download from 'downloadjs';
 const About = () => {
     const handleClick = () => {
         axios({
-            url: 'http://vincentherve.fr/api/download',
+            url: 'http://www.vincentherve.fr',
             method: 'GET',
             responseType: 'blob'
         }).then((res) => {
