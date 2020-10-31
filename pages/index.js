@@ -39,6 +39,7 @@ export default function App() {
         <meta property="og:image:height" content="924" />
         <meta property="og:description" content="Porfolio de Vincent Herve - Développeur web Full-Stack" />
         <meta property="og:url" content="http://vincentherve.fr/" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet" />
         <title>Vincent Herve - Développeur web Full-Stack</title>
