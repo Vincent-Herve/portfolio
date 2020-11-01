@@ -5,7 +5,7 @@ import download from 'downloadjs';
 const About = () => {
     const handleClick = () => {
         axios({
-            url: 'http://www.vincentherve.fr',
+            url: 'https://raw.githubusercontent.com/Vincent-Herve/portfolio/main/resource/cv.pdf',
             method: 'GET',
             responseType: 'blob'
         }).then((res) => {

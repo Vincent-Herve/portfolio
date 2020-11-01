@@ -43,43 +43,43 @@ const iconList = [
         icon: ReactRouter
     },
     {
-        name: 'Html',
+        name: 'Node.js',
         icon: NodeJs
     },
     {
-        name: 'Html',
+        name: 'Express.js',
         icon: ExpressJs
     },
     {
-        name: 'Html',
+        name: 'PostgreSQL',
         icon: PostgreSQL
     },
     {
-        name: 'Html',
+        name: 'Discord',
         icon: Discord
     },
     {
-        name: 'Html',
+        name: 'Npm',
         icon: Npm
     },
     {
-        name: 'Html',
+        name: 'Yarn',
         icon: Yarn
     },
     {
-        name: 'Html',
+        name: 'Git',
         icon: Git
     },
     {
-        name: 'Html',
+        name: 'Github',
         icon: Github
     },
     {
-        name: 'Html',
+        name: 'Slack',
         icon: Slack
     },
     {
-        name: 'Html',
+        name: 'Trello',
         icon: Trello
     },
 ];
