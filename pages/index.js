@@ -7,30 +7,29 @@ import Project from '../components/Project'
 import Skill from '../components/Skill'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import handleScroll from '../selectors/handler/handleScroll'
+import handleClickLink from '../selectors/handler/handleClickLink'
+import { BiChevronsUp } from "react-icons/bi"
+
+const Icon = () => (
+  <BiChevronsUp size="3.5rem" />
+);
 
 export default function App() {
-  if (process.browser) {
-    window.addEventListener('scroll', () => {
-      const divElement = document.querySelector('.about').offsetTop;
-      const navLink = document.querySelectorAll('.nav-link');
-      const navWebsiteName = document.querySelector('.navbar-website-name');
-      if (window.scrollY > divElement - 1) {
-        for (let i = 0;i < navLink.length;i++) {
-          navLink[i].classList.add('text-color');
-        }
-        navWebsiteName.classList.add('text-color');
-      }
-      else {
-        for (let i = 0;i < navLink.length; i++) {
-          navLink[i].classList.remove('text-color');
-        }
-        navWebsiteName.classList.remove('text-color');
-      }
+  const handleClickUpButton = () => {
+    window.scrollTo({
+      top: document.querySelector('.home').offsetTop,
+      behavior: 'smooth',
     });
+  }
+  if (process.browser) {
+    window.addEventListener('scroll', handleScroll);
   }
   return (
     <div className="app">
       <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Vincent Herve - Développeur web Full-Stack" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Vincent Herve - Développeur web Full-Stack" />
@@ -43,13 +42,14 @@ export default function App() {
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet" />
         <title>Vincent Herve - Développeur web Full-Stack</title>
       </Head>
-      <Header />
+      <Header handleClickLink={handleClickLink} />
       <Page>
         <Home />
         <About />
         <Project />
         <Skill />
         <Contact />
+        <span onClick={handleClickUpButton} className="upButton displayUpButton"><Icon /></span>
       </Page>
       <Footer />
     </div>

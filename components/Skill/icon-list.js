@@ -2,6 +2,7 @@ import {
     Css,
     Discord,
     ExpressJs,
+    Nestjs,
     Git,
     Github,
     Html,
@@ -14,7 +15,7 @@ import {
     Redux,
     Slack,
     Trello,
-    Yarn,
+    // Yarn,
 } from './icon';
 
 const iconList = [
@@ -51,6 +52,10 @@ const iconList = [
         icon: ExpressJs
     },
     {
+        name: 'Nestjs',
+        icon: Nestjs
+    },
+    {
         name: 'PostgreSQL',
         icon: PostgreSQL
     },
@@ -62,10 +67,10 @@ const iconList = [
         name: 'Npm',
         icon: Npm
     },
-    {
+    /* {
         name: 'Yarn',
         icon: Yarn
-    },
+    }, */
     {
         name: 'Git',
         icon: Git

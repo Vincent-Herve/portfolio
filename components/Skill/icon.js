@@ -42,8 +42,12 @@ export function Npm() {
     return <img className="content-img" src="/icon-npm.svg" alt="icone Npm" />
 }
 
-export function Yarn() {
+/* export function Yarn() {
     return <img className="content-img" src="/icon-yarn.svg" alt="icone Yarn" />
+} */
+
+export function Nestjs() {
+    return <img className="content-img" src="/icon-nestjs.svg" alt="icone Nestjs" />
 }
 
 export function Git() {

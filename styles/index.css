@@ -4,6 +4,17 @@
     font-size: 1.3rem;
 }
 
+.upButton {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+
+.displayUpButton {
+    display: none;
+}
+
 @media screen and (max-width: 450px) {
     .app {
         font-size: 1.1rem;
@@ -49,7 +60,7 @@
     .navbar-website-name {
         font-size: 2rem;
     }
-
+    
     .burger {
         background-color: #7687b8 !important;
     }
