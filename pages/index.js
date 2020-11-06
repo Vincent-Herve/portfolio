@@ -25,6 +25,7 @@ export default function App() {
   if (process.browser) {
     window.addEventListener('scroll', handleScroll);
   }
+  
   return (
     <div className="app">
       <Head>
